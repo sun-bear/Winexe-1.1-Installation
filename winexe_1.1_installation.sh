@@ -11,9 +11,11 @@ sudo apt-get -y install gcc-mingw-w64 comerr-dev libpopt-dev libbsd-dev zlib1g-d
 echo -e "\e[1;34mtar zxvf samba-4.1.23.tar.gz\e[0m"
 sleep 1
 tar zxvf samba-4.1.23.tar.gz
+sudo chmod +x -R . && \
 echo -e "\e[1;34mtar zxvf winexe-winexe-waf.tar.gz\e[0m"
 sleep 1
 tar zxvf winexe-winexe-waf.tar.gz
+sudo chmod +x -R . && \
 
 echo -e "\e[1;34mcd winexe-winexe-waf/source\e[0m"
 sleep 1
@@ -31,6 +33,7 @@ sleep 1
 echo -e "\e[1;34msudo cp build/winexe-static /usr/local/bin/winexe\e[0m"
 sleep 1
 sudo cp build/winexe-static /usr/local/bin/winexe
+sudo chmod +x -R . && \
 
 echo -e "\n\e[31mUsage : \e[0m\e[1;34mwinexe -U domain/username%password //ip_address 'command'\e[0m"
 echo -e "\n\e[31m+-+-+ WINEXE 1.1 Installation Complete +-+-+\e[0m"
