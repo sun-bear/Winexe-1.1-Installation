@@ -5,5 +5,4 @@ sleep 1
 sudo apt-get -y install python2.7 libtevent-dev
 sudo apt-get unstable install samba-dev
 cd source
-./waf configure build
 
